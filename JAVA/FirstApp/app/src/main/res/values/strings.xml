@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FirstApp</string>
+    <string name="hello_mit">Hello Ümit</string>
+    <string name="textview">TextView</string>
+    <string name="button">Button</string>
+    <string name="de_i_tir">Değiştir</string>
+</resources>
