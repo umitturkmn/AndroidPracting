@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void changeImg(View view){
         ImageView imageView = findViewById(R.id.imageView);
+        
         imageView.setImageResource(R.drawable.images);
 
     }
