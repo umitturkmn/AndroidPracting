@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="155dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="153dp"
+        android:hint="Sonuç : 0"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="49dp"
+        android:ems="10"
+        android:hint="Numara Giriniz."
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/number2"
+        app:layout_constraintStart_toStartOf="@+id/number2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/number2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginBottom="37dp"
+        android:ems="10"
+        android:hint="Numara Giriniz."
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/number1" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="296dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number2">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="63dp"
+            android:layout_height="69dp"
+            android:onClick="onSum"
+            android:text="+"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="63dp"
+            android:layout_height="69dp"
+            android:onClick="onDeduct"
+            android:text="-"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="63dp"
+            android:layout_height="69dp"
+            android:onClick="onMultiply"
+            android:text="x"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="68dp"
+            android:layout_height="69dp"
+            android:onClick="onDivide"
+            android:text="/"
+            android:textSize="34sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
